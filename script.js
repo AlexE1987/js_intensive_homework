@@ -3,6 +3,7 @@ const enterNumber = () => {
   let promtB = +prompt();
   if (isNaN(promtA) || isNaN(promtB)) {
     console.log('Некорректный ввод!');
+    return;
   }
   let changeNumberSystem = promtA.toString(promtB);
   let sumAndQuotient = `Ответ: ${promtA + promtB}, ${promtA / promtB}`;
